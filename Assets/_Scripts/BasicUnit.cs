@@ -4,28 +4,30 @@ using UnityEngine;
 
 namespace AlteroGames.GreatWar.Units
 {
-    [CreateAssetMenu(fileName = "New Unit", menuName = "New Unit/Basic") ]
+    [CreateAssetMenu(fileName = "New Unit", menuName = "New Unit/Basic")]
     public class BasicUnit : ScriptableObject
     {
         public enum unitType
         {
-            WORKER,
-            WARRIOR,
-            HEALER
+            Worker,
+            Warrior,
+            Healer
         };
-
-        // Привести в красивый вид
-        public bool mIsPlayerUnit;
-
-        public unitType mType;
-        public string mName;
+        [Space(15)]
+        [Header("Unit setting")]
+        public unitType Type;
+        public string Name;
 
         public GameObject humanPrefab;
         public GameObject infectedPrefab;
 
-        public int mCost;
-        public int mAttack;
-        public int mHealth;
-        public int mArmor;
+        [Space(15)]
+        [Header("Unit Base stats")]
+        [Space(40)]
+        public int Cost;
+        public int Attack;
+        public int AttackRange;
+        public int Health;
+        public int Armor;
     }
 }

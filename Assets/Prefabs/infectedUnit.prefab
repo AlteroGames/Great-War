@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8948294141252723835}
   - component: {fileID: 1790277101029563200}
   - component: {fileID: 5266299002101015151}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: infectedUnit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 2237606380975949662}
   - component: {fileID: 2274022847970621917}
   - component: {fileID: 1373063861894249862}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
